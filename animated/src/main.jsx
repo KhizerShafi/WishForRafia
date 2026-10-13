@@ -226,7 +226,35 @@ function App() {
       </section>
 
       <footer className="footer">
-        <span> A BIRTHDAY WISH FROM <strong className="credit-name">KHIZER SHAFI</strong> <span className="footer-heart">♥</span></span>
+       
+<span>
+  A BIRTHDAY WISH FROM{" "}
+  <strong
+    className="credit-name"
+    onClick={() =>
+      window.open(
+        "https://bykhizershafi.vercel.app/",
+        "_blank",
+        "noopener,noreferrer"
+      )
+    }
+    role="link"
+    tabIndex={0}
+    onKeyDown={(e) => {
+      if (e.key === "Enter") {
+        window.open(
+          "https://bykhizershafi.vercel.app/",
+          "_blank",
+          "noopener,noreferrer"
+        );
+      }
+    }}
+  >
+    KHIZER SHAFI
+  </strong>{" "}
+  <span className="footer-heart">♥</span>
+</span>
+
         <span className="footer-note"><MoonStar size={13} /> Designed by Khizer Shafi</span>
       </footer>
     </main>
